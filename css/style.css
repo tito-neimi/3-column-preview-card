@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#conteiner{
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 300px;
+  height: 550px ;
+  padding: 50px;
+}
+
+.card-1{
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2{
+  background-color: hsl(184, 100%, 22%);
+}
+.card-2 p{
+    min-height: 114px;
+}
+.card-3{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card__img{
+  align-self: flex-start;
+}
+
+.card__titles{
+  color: hsl(0, 0%, 95%);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+}
+
+.card__p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+
+}
+
+.card__button{
+  height: 40px;
+  width: 150px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: hsl(0, 0%, 95%);
+  transition: 0.3s;
+}
+
+.card__button:hover{
+  color: white ;
+  border: 2px solid white;
+  cursor: pointer;
+  background-color: transparent;
+}
+.card-1 button{
+  color: hsl(31, 77%, 52%);
+}
+.card-2 button{
+  color: hsl(184, 100%, 22%);
+}
+.card-3 button{
+  color: hsl(179, 100%, 13%);
+}
+
+
+@media (max-width:950px) {
+  #conteiner{
+    flex-direction: column;
+    margin-block: 50px;
+  }
+}
